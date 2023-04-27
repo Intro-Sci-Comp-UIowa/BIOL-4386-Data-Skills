@@ -8,6 +8,10 @@ date: 2020-04-15
 ## Reference & Credit
 This workshop is entirely based on <https://petebankhead.gitbooks.io/imagej-intro/content/>. This markdown file provides miscellaneous notes I made while working through the tutorial. You should follow the original and only use this file as a troubleshooting guide.
 
+**Update 2023-04-20**
+
+The author of the above textbook has updated it! Here is the new and awesome version! <https://bioimagebook.github.io>
+
 ## Set up your computer
 You need the ImageJ software and the data associated with this tutorial. You don't have to use the [FastX](fastx.divms.uiowa.edu) environment, although it does have ImageJ pre-installed. To work on your own computer, simply [download](https://imagej.net/Fiji/Downloads) and install FIJI (FIJI Is Just ImageJ), which is built on top of ImageJ to provide many plugins for biological image analysis.
 
@@ -18,12 +22,24 @@ You need the ImageJ software and the data associated with this tutorial. You don
 
 # Part I - INTRODUCING IMAGES, IMAGEJ & FIJI
 ## Images & Pixels
-- What is a "pixel"?
-- What's the difference between "data" and "display"? Why?
-- Why images that _look the same_ can contain _different_ pixel values, while images that _look different_ can contain _the same_ pixel values?
-    - Look at Figure 3 -- use the pixel intensity distribution to pick out "which two figures are identical".
+
+_Questions_
+
 - If you want to tell whether two images are identical, is comparing their histograms always a reliable method?
 
+_Activities_
+
+- Question: what is an image from the perspective of the computer?
+    - Explain: Image are composed of pixels - as far as the computer is concerned, each pixel is just a number and a (2D) image is just a matrix of numbers.
+    - Demonstrate: pixel values behind a (section of an) image
+- What is a "pixel"?
+    - Picture element
+- Question/discussion: What's the difference between "data" and "display"?
+    - Demonstrate: images that _look the same_ can contain _different_ pixel values, while images that _look different_ can contain _the same_ pixel values?
+    - Hands-on: Look at Figure 3 -- use the pixel intensity distribution to pick out "which two figures are identical".
+- Where do the pixel values come from? How are pixel values converted into colors for display?
+    - answer to the first question depends on and concerns how the image was acquired. briefly talk about this
+    - answer to the second question has to do with **Lookup Table (LUT)**
 ### Mapping colors to pixels
 - What is a "Look-Up Table"?
 - Why use different LUTs?
