@@ -1,0 +1,1 @@
+- `2026-03-30-student-activities-data-metabolic-rates.csv`: accompany the in-class activities. designed by Haley Reeves of 2026 spr class. originally from [here](https://ramadda.data.bas.ac.uk/repository/entry/show?entryid=8d9ffd4a-16c0-4d48-9fc9-02988676ef78) and based on **PMC9142526**.
